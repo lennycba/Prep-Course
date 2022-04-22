@@ -48,11 +48,11 @@ function saludo(idioma) {
   if (idioma === 'aleman'){
     return "Guten Tag!";
   }else if (idioma === 'mandarin'){
-    return "Ni Hao";
+    return "Ni Hao!";
   }else if (idioma === 'ingles'){
-    return "Hello";
+    return "Hello!";
   }else {
-    return "Hola";
+    return "Hola!";
   }
 }
 
