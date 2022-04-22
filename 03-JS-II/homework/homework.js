@@ -153,12 +153,9 @@ function esPrimo(numero) {
     return true;
   }
   for (var i = 2 ; i < numero ; i++) {
-    if (numero % i === 0){
-      return false;
-    }else {
-      return true;
+    if (numero % i === 0){return false;}
     }
-  }
+      return true;
 }
 
 function esVerdadero(valor){
