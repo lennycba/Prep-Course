@@ -62,7 +62,8 @@ function dePalabrasAFrase(palabras) {
   for (var i= 0 ; i < palabras.length ; i++){
     frases [i] = palabras [i] + ' ';
     
-}return (frases.toString())
+}return (frases.toString());
+}
 
 
 function arrayContiene(array, elemento) {
