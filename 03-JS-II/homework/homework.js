@@ -152,7 +152,7 @@ function esPrimo(numero) {
   }else if (numero === 2){
     return true;
   }
-  for (i = 2 ; i < numero ; i++) {
+  for (var i = 2 ; i < numero ; i++) {
     if (numero % i === 0){
       return false;
     }else {
@@ -197,7 +197,7 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var i = 0;
+  var i = 1;
 do {
  numero = numero + 5
  i++;
