@@ -93,7 +93,7 @@ function promedioResultadosTest(resultadosTest) {
   var promedio = 0;
   for (i = 0 ; i < resultadosTest.length ; i++){
     promedio = promedio + resultadosTest [i];
-  } promedio = promedio / resultadosTest -1;
+  } promedio = promedio / resultadosTest;
   return promedio;
 }
 
