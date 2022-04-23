@@ -239,7 +239,7 @@ function continueStatement(numero) {
   // Tu código:
   let nuevoArray = [];
   var suma = numero;
-    for(i = 0 ; i > 10 ; i++){
+    for(i = 0 ; i < 10 ; i++){
         if (i === 5) continue;
           else {
           suma = suma + 2;
