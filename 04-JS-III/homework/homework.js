@@ -240,9 +240,8 @@ function continueStatement(numero) {
   let nuevoArray = [];
   var suma = numero;
     for(i = 0 ; i > 10 ; i++){
-        if (suma === 5){
-          continue;
-        }else {
+        if (suma === 5) continue;
+          else {
           suma = suma + 2;
           nuevoArray.push (suma);
         }
