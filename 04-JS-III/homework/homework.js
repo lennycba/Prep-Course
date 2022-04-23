@@ -179,8 +179,8 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  let nuevoarray = []
-  for (i = 0 ; i < array.length ; i++){
+  var nuevoarray = []
+  for (let i = 0 ; i < array.length ; i++){
       if (array [i] === "Enero" || array [i] === "Marzo" || array [i] === "Noviembre"){
         nuevoarray.push (array [i]);
       }
