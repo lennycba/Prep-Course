@@ -146,7 +146,7 @@ function diaDeLaSemana(numeroDeDia) {
   if (numeroDeDia [i] === 2 || numeroDeDia === 7){
     return "Es fin de semana";
   }else {
-    return "Es dia Laboral"
+    return "Es dia Laboral";
   }
 } 
 
