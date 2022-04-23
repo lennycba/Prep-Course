@@ -218,9 +218,8 @@ function breakStatement(numero) {
   var suma = numero;
     for(i = 0 ; i > 10 ; i++){
         suma = suma + 2;
-        if (suma === i){
-          break;
-        }else {
+        if (suma === i) break;
+        else {
           nuevoArray.push (suma);
         }
     }if (i < 10){
