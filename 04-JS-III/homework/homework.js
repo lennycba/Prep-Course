@@ -156,7 +156,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   let numero = n.toString ();
-  if (n.charAt (0) === 9){
+  if (n.charAt (0) === "9"){
     return true;
   }return false;
 }
