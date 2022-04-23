@@ -105,7 +105,7 @@ function numeroMasGrande(numeros) {
   var mayor = 0;
   for(i = 0 ; i < numeros.length ; i++){
     if (mayor < numeros [i] ){
-      mayor = numero [i];
+      mayor = numeros [i];
     }
   }return mayor;
 }
