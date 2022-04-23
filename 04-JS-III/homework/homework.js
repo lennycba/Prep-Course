@@ -78,10 +78,10 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var arrayNumeros = []
+  var suma = 0
   for (i = 0 ; i < numeros.length ; i++){
-    arrayNumeros [i] = numeros [i]+ 1;
-  }return arrayNumeros;
+    suma = suma + numeros [i];
+  }return suma;
 
 }
 
