@@ -56,12 +56,17 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
- 
+ /*
   var espejo = '';
   for(let i = str.length -1; i >= 0; i--) {
     espejo += str[i];
   };
- return espejo.split(' ').reverse().join(' ');
+ return espejo.split(' ').reverse().join(' ');*/
+
+let arrayDividido = str.split(' ');
+const objetoMirror = arrayDividido.map ((elemento) => elemento.split('').reverse().join(''));
+ return objetoMirror.join(' ');
+
 } 
 
 
@@ -70,6 +75,14 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+
+  // 1 2 3 4 3 2 1
+var numeroAString = numero.toString();
+var invertido = numeroAString.split('').reverse().join('');
+if(numeroAString === invertido){
+  return "Es capicua"
+}else return "No es capicua";
+
 }
 
 
@@ -77,6 +90,12 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var nuevaCadena = '';
+  for(i= 0; i<cadena.length; i++){
+    if (cadena[i]=== 'a' || cadena[i]=== 'b' || cadena[i]=== 'c') {
+       continue;
+    }else nuevaCadena += cadena[i];
+  }return nuevaCadena;
 }
 
 
@@ -84,6 +103,8 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
+
 }
 
 
