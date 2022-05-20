@@ -43,7 +43,7 @@ function capToFront(s) {
   for (i = 0; i < s.length; i++){
 
     if(s[i] === s[i].toUpperCase()) mayuscula = mayuscula + s[i]
-      else minuscula= minuscula + s[i];
+      else minuscula = minuscula + s[i];
   }
 
   return mayuscula+minuscula;
@@ -103,17 +103,35 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
-
-
+interruptor = true;
+while (interruptor){
+  interruptor = false;
+    for(i= 0; i < arr.length -1; i++){
+      if (arr[i].length > arr[i+1].length){
+        var auxiliar = arr[i];
+        arr[i]= arr[i+1];
+        arr[i+1] = auxiliar;
+        interruptor = true;
+      }
+    }
+  }
+return arr;
 }
-
 
 function buscoInterseccion(arreglo1, arreglo2){
   //Existen dos arrays, cada uno con 5 números. A partir de ello, escribir una función que permita 
   //retornar un nuevo array con la intersección de ambos elementos. (Ej: [4,2,3] unión [1,3,4] = [3,4].
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
-  //Escribe tu código aquí  
+  //Escribe tu código aquí 
+  var coincidencias = [];
+  for(i = 0; i<arreglo1.length; i++){
+    for(j = 0; j<arreglo2.length; j++){
+      if (arreglo1[i] === arreglo2[j]){
+        coincidencias.push(arreglo1[i])
+      }
+    }
+  } return coincidencias;
 }
 
 
