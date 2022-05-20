@@ -75,14 +75,9 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
-
-  // 1 2 3 4 3 2 1
-var numeroAString = numero.toString();
-var invertido = numeroAString.split('').reverse().join('');
-if(numeroAString === invertido){
-  return "Es capicua"
-}else return "No es capicua";
-
+  var invertido = numero.toString().split('').reverse().join('');
+  if (numero.toString() === invertido) { return "Es capicua" }
+  else {return "No es capicua"}
 }
 
 
@@ -90,14 +85,26 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
-  var nuevaCadena = '';
-  for(i= 0; i<cadena.length; i++){
-    if (cadena[i]=== 'a' || cadena[i]=== 'b' || cadena[i]=== 'c') {
-       continue;
-    }else nuevaCadena += cadena[i];
-  }return nuevaCadena;
-}
+/*
+  var cadenaArray = cadena.split('');
 
+for (let i=0; i< cadenaArray.length; i++){
+  if (cadenaArray[i] === "a" || cadenaArray[i] === "b" || cadenaArray[i] === "c" ){
+    cadenaArray.splice(i, 1);
+  }
+}
+ return cadenaArray.join(''); 
+}
+*/
+var cadenaArray = cadena.split('');
+var nuevaCadena = [];
+for (let i=0; i< cadenaArray.length; i++){
+  if(cadenaArray [i] != "a" && cadenaArray [i] != "b" && cadenaArray [i] != "c"){
+    nuevaCadena.push(cadenaArray[i]);
+  }
+}return nuevaCadena.join('');
+
+}
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
